@@ -30,6 +30,9 @@ jobs:
 
       - name: Instalar dependências
         run: poetry install --no-root
+
+      - name: Adicionando PEP8
+        run: poetry add --dev flake8
       
       - name: Verificar PEP8
         run: poetry run flake8 jogo.py
